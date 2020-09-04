@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    *{
+      /*box-sizing: border-box;*/
+      margin: 0;
+      padding: 0;
+    }
+  body{
+  margin: 0;
+  padding: 0;
+   background-image: url("loco.jpg");
+    background-size: 1600px 900px;
+    background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+div{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+    .trainset
+    {
+      /*height: 100vh;
+      width: 100vw;*/
+
+      position: relative;
+      top:400px;
+  height: 900px;
+  width: 1600px;
+  margin: 0;
+  background: #280744;
+  overflow: hidden !important;
+  border-color: 1px solid yellow;
+  background-size: contain;
+  box-sizing: border-box;
+  
+    }
+   
+    
+      .background
+    {
+      position: absolute;
+      top:0%;
+      height: 900px;
+      width: 2000px;
+      background-image: url("bg.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+     .moon
+    {
+      position: absolute;
+      top:1%;
+      left:5%;
+      height: 8%;
+      width: 8%;
+      background-image: url("moon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 2;
+    }
+
+
+     .rocks1
+    {
+      position: absolute;
+      top:08%;
+      
+      height: 100%;
+      width: 100%;
+      background-image: url("rocks_1.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+       box-sizing: border-box;
+       overflow: hidden;
+      z-index: 1;
+    }
+
+      .rocks2
+    {
+      position: absolute;
+      top:12%;
+      
+      height: 100%;
+      width: 100%;
+      background-image: url("rocks_2.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+       box-sizing: border-box;
+       overflow: hidden;
+      z-index: 3;
+    }
+    
+
+    .rails
+    {
+      position: absolute;
+      top:20%;
+      height: 100%;
+      width: 100%;
+      background-image: url("rails.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 4;
+    }
+   
+    .train
+    {
+      position: absolute;
+      top:18%;
+      right:15%;
+      height: 100%;
+      width: 100%;
+      background-image: url("train.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 5;
+    }
+
+     .lights
+    {
+      position: absolute;
+      top:13%;
+      
+      height: 110%;
+      width: 100%;
+      background-image: url("lights.png");
+      background-size: contain;
+       animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+      overflow: hidden;
+      box-sizing: border-box;
+      z-index: 6;
+    }
+
+    
+    
+
+
+     @keyframes rail
+    {
+       0%{background-position: 0px 0px}
+       100%{background-position: 1920px 0px}
+      }
+  
+ @media screen and (max-width:480px) {
+  body {
+     background-image: url("loco.jpg");
+    background-size: 600px 800px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+       }
+
+       .trainset
+       {
+        position: relative;
+        top:450px;
+         height: 800px;
+         width: 507px;
+         margin: 0;
+         background: #280744;
+  overflow: hidden !important;
+  border-color: 1px solid yellow;
+  background-size: contain;
+  box-sizing: border-box;
+
+       }
+
+         .background
+    {
+      position: absolute;
+      top:0%;
+      height: 800px;
+      width: 507px;
+      background-image: url("bg.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+     .moon
+    {
+      position: absolute;
+      top:3%;
+      left:8%;
+      height: 10%;
+      width: 10%;
+      background-image: url("moon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 2;
+    }
+
+
+     .rocks1
+    {
+      position: absolute;
+      top:12%;
+      
+      height: 100%;
+      width: 100%;
+      background-image: url("rocks_1.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+       box-sizing: border-box;
+       overflow: hidden;
+      z-index: 1;
+    }
+
+      .rocks2
+    {
+      position: absolute;
+      top:17%;
+      
+      height: 100%;
+      width: 100%;
+      background-image: url("rocks_2.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 25s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+       box-sizing: border-box;
+       overflow: hidden;
+      z-index: 3;
+    }
+    
+
+    .rails
+    {
+      position: absolute;
+      top:20%;
+      height: 100%;
+      width: 100%;
+      background-image: url("rails.png");
+      background-size: contain;
+      animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 4;
+    }
+   
+    .train
+    {
+      position: absolute;
+      top:19%;
+      right:10%;
+      height: 100%;
+      width: 100%;
+      background-image: url("train.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      overflow: hidden;
+       box-sizing: border-box;
+      z-index: 5;
+    }
+
+     .lights
+    {
+      position: absolute;
+      top:18%;
+      
+      height: 110%;
+      width: 100%;
+      background-image: url("lights.png");
+      background-size: contain;
+       animation-name: rail;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      background-repeat: repeat-x;
+      overflow: hidden;
+      box-sizing: border-box;
+      z-index: 6;
+    }
+
+
+  }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="trainset">
+    <div class="background"></div>
+    <div class="moon"></div>
+    <div class="rocks1"></div>
+    <div class="rocks2"></div>
+    <div class="rails"></div>
+    <div class="train"></div>
+    <div class="lights"></div>
+  
+  </div>
+</body>
+</html>
