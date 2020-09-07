@@ -4,16 +4,18 @@
   <!--meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"-->
    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap">
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Lobster&family=Sacramento&display=swap">
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap">
    
-<title>Happy Birthday</title>
+<title>Happy Birthday Bhagyashri</title>
  <style type="text/css">
  	*{
       /*box-sizing: border-box;*/
@@ -38,11 +40,12 @@
        color: yellow;
        text-shadow: 2px 2px 5px;
        text-align: center;
-     font-family: 'Lobster', cursive;
-
+    /* font-family: 'Lobster', cursive;*/
+    font-family: 'Berkshire Swash', cursive;
+        font-size: 37px;
 
        animation-name: blin;
-       animation-duration: 1s;
+       animation-duration: 2s;
        animation-timing-function: ease-in-out;
        animation-iteration-count: infinite;
     }
@@ -54,7 +57,7 @@
     	position: relative;
     	height: 50vh;
     	width: 95vw;
-    	border: 2px solid white;
+    	/*border: 2px solid white;*/
     	margin: auto;
     	
     }
@@ -67,7 +70,7 @@
         margin-left: 2.3%;
     	width: 95%;
     	height: 70%;
-    	border: 2px solid red;
+    	/*border: 2px solid red;*/
     }
     
       #clock
@@ -78,7 +81,7 @@
   
          font-family: 'Do Hyeon', sans-serif;
          color: #59ff1f;
-         font-size: 30px;
+         font-size: 40px;
          text-align: center;
     	/*width:90%;
     	height: 15%;
@@ -93,12 +96,16 @@
     	width:60%;
     	height:100%;
     	top:35%;
-    	float: right;
+    	float: left;
     	background-size: 100% 100%;
-    	background-image: url("loco.jpg");
-
-    	border: 2px solid yellow;
-    }
+    	background-image: url("baghu1.jpg");
+        animation-name: img_round;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    	/*border: 2px solid yellow;*/
+    	   border: 5px solid #ccc;
+      }
 
     .imgg
     {
@@ -106,15 +113,16 @@
     	top:35%;
     	width:38%;
     	height:100%;
-    	margin-left: 62%;
+    	margin-left: 63%;
     	float: right;
     	overflow: auto;
     	color: white;
         /*font-family: 'Sacramento', cursive;*/
-        font-family: 'Sacramento', cursive;
+        /*font-family: 'Sacramento', cursive;*/
+         font-family: 'pacifico',cursive;
         font-size: 20px;
-	    text-align: justify;
-    	border: 2px solid red;
+        text-align:justify-all;
+    	/*border: 2px solid red;*/
     }
 
     
@@ -125,7 +133,7 @@
         
     	width:100vw;
     	height: 40vh;
-    	border: 2px solid green;
+    	/*border: 2px solid green;*/
         overflow: hidden;
     }
 
@@ -270,6 +278,15 @@
     	100%{ background-position: 100vw 0 }
     } 
 
+    @keyframes img_round
+    {
+    	0%{background-image: url("baghu6.jpg");}
+    	25%{background-image: url("baghu1.jpg");}
+    	50%{background-image: url("baghu3.jpg");}
+    	75%{background-image: url("baghu4.jpg");}
+    	100%{background-image: url("baghu2.jpg");}
+    }
+
     @keyframes blin
    {
        0%{color:yellow}
@@ -277,7 +294,7 @@
        100%{color: orange}
    }
 
-   @media screen and (max-width:480px) 
+   @media only screen and (max-width:540px) 
    {
          .maincontainer
          {
@@ -286,7 +303,8 @@
           
           h1
           {
-          	font-size: 23px;
+          	top:7%;
+          	font-size: 30px;
 
           }
          .trainset
@@ -370,10 +388,16 @@
 
      #clock
      {
+     	top:2%;
      	font-size: 60px;
      }
-
-
+     
+     
+     .writer
+     {
+     	background-size: cover;
+     }
+       
    }
 
 
@@ -390,9 +414,9 @@
 			<h1>Happy Birthday Bhagyashri</h1>
 			<div id="clock"></div>
 			<div class="writer"></div>
-			<div class="imgg"><p>Wish you many many Happy Returns of the Day pretty Lady. First of all I want to apologize that
-			I couldn't make it their on this special day but consider this as a small gift from my side. May God bless you with
-			all happinees and joy. Enjoy your Day!!!!!!!!   </p></div>
+			<div class="imgg"><p>Wish you Many Many Happy Returns of the Day pretty Lady. First of all I want to apologize that
+			I couldn't make it there on this auspicious day but consider this as a small gift from my side. May God bless you with
+			all the Happinees & Joy. Enjoy your Day!!!!!!!!   </p></div>
 		</div>
 	
     </div>
